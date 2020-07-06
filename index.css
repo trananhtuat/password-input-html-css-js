@@ -1,0 +1,47 @@
+:root {
+	--main-bg-color: #f0f0f0;
+	--form-bg-color: #fff;
+	--input-bg-color: #eee;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--main-bg-color);
+}
+
+.form {
+	width: 300px;
+	height: 300px;
+	background: var(--form-bg-color);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+			0 10px 10px rgba(0,0,0,0.22);
+}
+
+.input {
+	background: var(--input-bg-color);
+	border: none;
+	padding: 12px 22px;
+	margin: 8px;
+	width: 100%;
+	outline: none;
+	border-radius: 20px;
+}
+
+.password-toggle {
+	position: absolute;
+	top: 50%;
+	right: 50px;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
